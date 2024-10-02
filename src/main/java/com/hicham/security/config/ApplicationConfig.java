@@ -1,8 +1,7 @@
-package com.alibou.security.config;
+package com.hicham.security.config;
 
-import com.alibou.security.auditing.ApplicationAuditAware;
-import com.alibou.security.user.UserRepository;
-import jakarta.persistence.criteria.CriteriaBuilder;
+import com.hicham.security.auditing.ApplicationAuditAware;
+import com.hicham.security.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

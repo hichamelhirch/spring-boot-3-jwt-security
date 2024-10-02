@@ -1,16 +1,13 @@
-package com.alibou.security;
+package com.hicham.security;
 
-import com.alibou.security.auth.AuthenticationService;
-import com.alibou.security.auth.RegisterRequest;
-import com.alibou.security.user.Role;
+import com.hicham.security.auth.AuthenticationService;
+import com.hicham.security.auth.RegisterRequest;
+import com.hicham.security.user.Role;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-
-import static com.alibou.security.user.Role.ADMIN;
-import static com.alibou.security.user.Role.MANAGER;
 
 @SpringBootApplication
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
@@ -30,7 +27,7 @@ public class SecurityApplication {
 					.lastname("Admin")
 					.email("admin@gmail.com")
 					.password("password")
-					.role(ADMIN)
+					.role(Role.ADMIN)
 					.build();
 			System.out.println("Admin token: " + service.register(admin).getAccessToken());
 
@@ -39,7 +36,7 @@ public class SecurityApplication {
 					.lastname("Admin")
 					.email("manager@mail.com")
 					.password("password")
-					.role(MANAGER)
+					.role(Role.MANAGER)
 					.build();
 			System.out.println("Manager token: " + service.register(manager).getAccessToken());
 

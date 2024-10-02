@@ -1,6 +1,6 @@
-package com.alibou.security.auth;
+package com.hicham.security.auth;
 
-import com.alibou.security.user.Role;
+import com.hicham.security.user.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

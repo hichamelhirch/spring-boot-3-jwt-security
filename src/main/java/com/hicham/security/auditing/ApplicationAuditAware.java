@@ -1,6 +1,6 @@
-package com.alibou.security.auditing;
+package com.hicham.security.auditing;
 
-import com.alibou.security.user.User;
+import com.hicham.security.user.User;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
